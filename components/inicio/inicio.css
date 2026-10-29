@@ -1,0 +1,459 @@
+.seccion_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.seccion_info>h2 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.content_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content_video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content_video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+.flechas-levitando {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.flecha {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+}
+
+.seccion_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    /* background-image: linear-gradient(180deg, #0000007c, #0000007c), url(/assets/vegetacion.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+._tesoro_amarillo {
+    display: none;
+    text-decoration: none;
+    background-image: linear-gradient(180deg, #0000004d, #0000004d), url(/assets/_amarillo_del_ecuador.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin: 40px auto;
+}
+
+._banana_solara {
+    display: flex;
+    text-decoration: none;
+    background-image: linear-gradient(180deg, #00000075, #00000075), url(/assets/seccion_banana.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding: 180px 0;
+    margin: 40px auto;
+}
+
+.content_tesoro_amarillo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.content_tesoro_amarillo h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: #000000 1px 1px 2px;
+    color: #FBEA10;
+    font-size: 52px;
+    white-space: normal;
+    pointer-events: none;
+    text-align: center;
+}
+
+.content_tesoro_amarillo img {
+    flex: 25% 0;
+    width: 10px;
+}
+
+@media(max-width: 768px) {
+    .content_tesoro_amarillo {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .content_tesoro_amarillo img {
+        display: none;
+        width: 250px;
+    }
+
+    .content_tesoro_amarillo p {
+        text-align: center;
+        width: 100%;
+        opacity: 1;
+        text-shadow: #030303 1px 1px 2px;
+        color: white;
+        bottom: 20px;
+    }
+}
+
+._back_terrenos_farms_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #005f0248;
+    padding: 40px 0;
+}
+
+._content_main_info_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+._text_terrenos_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+}
+
+._img_terrenos_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+._img_terrenos_ img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media(max-width: 768px) {
+    ._content_main_info_ {
+        flex-direction: column-reverse;
+    }
+
+    ._text_terrenos_ {
+        width: 100%;
+    }
+
+    ._img_terrenos_ {
+        width: 100%;
+    }
+}
+
+.logo_inicio {
+    width: 350px;
+}
+
+
+.seccion_transporter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.content_info_transporter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content_info_transporter>img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 5;
+    width: 220px;
+}
+
+.content_info_transporter:hover .content_text_transporter {
+    opacity: 1;
+}
+
+.content_delivery_quality {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.content_delivery_quality img {
+    width: 500px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1011px) {
+
+    .content_delivery_quality {
+        top: 20px !important;
+        right: 20px !important;
+        left: auto;
+        bottom: auto;
+    }
+
+    .content_delivery_quality img {
+        width: 220px;
+    }
+}
+
+.content_img_transporter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content_img_transporter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #00000096, black);
+}
+
+.content_img_transporter>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content_text_transporter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    z-index: 5;
+    width: 300px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.content_text_transporter h2 {
+    font-size: 22px;
+}
+
+.content_text_transporter p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.seccion_show_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 850px;
+    background-image: linear-gradient(180deg, #ffffff, #ffffff5b, #ffffff), url(/assets/finca_fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content_info_extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin: 100px 100px 0px; */
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    /* 16:9 */
+    min-width: 177.77vh;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+    border: 0;
+    pointer-events: none;
+}
+
+.background_video {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.background_video::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.795), #00000050);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.text_info_extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    gap: 5px;
+    color: white;
+    z-index: 10;
+}
+
+.text_info_extra img {
+    width: 400px;
+}
+
+.text_info_extra h2 {
+    font-size: 32px;
+}
+
+@media(max-width: 768px) {
+
+    .seccion_show_info {
+        height: auto;
+    }
+
+    .video-wrapper {
+        width: 100vw;
+        height: 260px;
+    }
+
+    .text_info_extra {
+        bottom: 40px;
+    }
+
+    .background_video::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.76), #0000004d);
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .text_info_extra img {
+        width: 120px;
+    }
+
+    .text_info_extra h2 {
+        font-size: 16px;
+    }
+
+    .seccion_show_info {
+        margin-top: 40px;
+    }
+
+    .content_info_extra {
+        padding: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .content_info_productos {
+        flex-direction: column;
+    }
+
+    .content_card_acces {
+        flex-direction: column;
+    }
+
+    .content_redes {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content_img_collage {
+        width: 100%;
+    }
+
+    .red_social {
+        width: 100%;
+    }
+
+    .content_text_transporter {
+        opacity: 1;
+    }
+
+    ._info_new {
+        flex-direction: column;
+    }
+}
